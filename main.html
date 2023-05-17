@@ -1,20 +1,26 @@
 <html>
     <head><title>Homepage</title>
     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
          #header
             {
-                background: #6B7A8F;
-                margin:  auto; 
+                background: #1D2228;
+                margin:  0; 
                 width: auto;
                 padding: 0.3%;
                 color: #f1f2e7f5;
             }
             #menu
             {
-                background: #DCC7AA;
-                width: auto;
-                height: 50px;
-                padding-bottom: 3%;
+                background: #FF6864;
+                width: 100%;
+                height: 40px;
+                padding-bottom: 2.5%;
+                padding-top: 0%;
+              
             }
             h4
             {
@@ -27,13 +33,13 @@
             }
             #body
             {
-                background: #acb7ae;
+                background: #E8EAE3;
                 width: auto;
                 height: 70%;
             }
             #footer
             {
-                background: #6B7A8F;
+                background: #1D2228;
                 margin:  auto; 
                 width: auto;
                 height: fit-content;
@@ -57,7 +63,7 @@
             }
 
         button {  
-        background: rgba(195, 175, 147, 0.52);
+        background: #FF6864;
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10px);
@@ -70,7 +76,9 @@
         margin: auto;     
         cursor: pointer;   
          }  
-
+         a{
+            text-decoration: none;
+         }
          button:hover {   
         opacity: 0.7;   
         }   
@@ -82,6 +90,7 @@
             a:link /* unvisited link */
             {
             color: black;
+            
             } 
 
             a:visited /* visited link */
@@ -93,17 +102,18 @@
     <body>
     <div id="header">
         <div id="left"><button><a href="/Homepage files/4-login.html" target="_blank">Login</a></button></div>
-        <div id="right"><button><a href="/Homepage files/3-Register.html" target="_blank">Register</a></button></div>
-            <center><h2>ONLINE NOTES & OLD QUESTIONS MANAGEMENT SYSTEM</h2></center>
+        <div id="right"><button><a href="/Homepage files/3-Register.html" target="_blank">Sign Up</a></button></div>
+            <center><img src="Images/Logo.png" width="60px"><h2>ONLINE NOTES & OLD QUESTIONS MANAGEMENT SYSTEM</h2></center>
         </div>
 
     <div id="menu">
-        <h4><a href="main.html">Home</a></h4>
-        <h4><a href="/Homepage files/1-Online Notes.html" target="_blank">Online Notes</a></h4>
-        <h4><a href="/Homepage files/2-Old Questions.html" target="_blank">Old Questions</a></h4>
+        <h4><a href="main.html"><img src="Images/Home.png" width="20px">Home</a></h4>
+        <h4><a href="/Homepage files/1-Online Notes.html" target="_blank"><img src="Images/Online Notes.png" width="20px">Online Notes</a></h4>
+        <h4><a href="/Homepage files/2-Old Questions.html" target="_blank"><img src="Images/Old Questions.png" width="20px">Old Questions</a></h4>
     </div>
      
     <div id="body">
+        
       
     </div>
 
