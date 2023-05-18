@@ -57,3 +57,9 @@ a:link /* unvisited link */
       padding: 0.1%;
       color: #E8EAE3;
   }
+
+  .social{
+    margin-top: 1%;
+    margin-bottom: -1%;
+
+}
