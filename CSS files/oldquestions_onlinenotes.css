@@ -1,0 +1,33 @@
+
+body{
+  background: #E8EAE3;
+  margin: 0px;
+  padding: 0px;
+}
+#header
+  {
+      background: #FF6864;
+      margin:  0; 
+      width: auto;
+      padding: 0.3%;
+      color: #1D2228;
+  }
+  #footer
+  {
+      background: #1D2228;
+      margin:  auto; 
+      width: auto;
+      height: fit-content;
+      padding: 0.1%;
+      color: #E8EAE3;
+  }
+  h2{
+    color: #1D2228;
+  }
+  iframe
+  {
+  width: 1200;
+  height: 800;
+  
+  }
+    
