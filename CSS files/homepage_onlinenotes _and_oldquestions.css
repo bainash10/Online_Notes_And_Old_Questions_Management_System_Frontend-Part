@@ -1,0 +1,59 @@
+body{
+  background: #E8EAE3;
+  margin: 0px;
+  padding: 0px;
+}
+table{
+  font-size: large;
+
+}
+#header
+  {
+      background: #FF6864;
+      margin:  0; 
+      width: auto;
+      padding: 0.3%;
+      color: #1D2228;
+  }
+  #body
+  {
+      background: #E8EAE3;
+      width: auto;
+      height: 70%;
+  }
+  .background{
+
+background: rgba(255, 104, 100, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(255, 104, 100, 0.66);
+width: 32%;
+margin-left: 29%;
+padding: 4%;
+
+
+  }
+  a{
+  text-decoration: none;
+}
+a:link /* unvisited link */
+  {
+  color: black;
+  
+  } 
+
+  a:visited /* visited link */
+  {
+  color: black;
+  }
+  #footer
+  {
+      background: #1D2228;
+      margin:  auto; 
+      width: auto;
+      height: fit-content;
+      padding: 0.1%;
+      color: #f1f2e7f5;
+  }
