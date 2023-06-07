@@ -48,6 +48,11 @@ a:link /* unvisited link */
   {
   color: black;
   }
+  a:hover{
+    font-size: large;
+    font-weight: bolder;
+   
+}
   #footer
   {
       background: #1D2228;
