@@ -38,7 +38,7 @@
             {
                 background: #E8EAE3;
                 width: 100%;
-                height: 80%;
+                height: auto;
                 margin: 0px;
                 padding: 0px;
                 text-align: left;
@@ -55,7 +55,7 @@
             #left
             {
                 float: left;
-                padding-top: 2%;
+                padding-top: 3%;
                font-size: larger;
                font-weight:bolder;
 
@@ -63,9 +63,13 @@
             #right
             {
                 float: right;
-                padding-top: 2%;
+                padding-top: 3%;
                font-size: larger;
                font-weight:bolder;
+            }
+
+         marquee {
+        padding: 10px;
             }
 
         button {  
@@ -114,6 +118,144 @@
                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                font-size: x-large;
             }
+
+/* ABOUT ME KO CSS */
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 0px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.pic{
+  height: auto;
+  width:  302px;
+  border-radius: 20px ;
+}
+.about{
+  width: 100%; 
+  margin: auto;
+  width: 1130px;
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+padding-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 0px;
+}
+/* .about-us{
+  height: 100%;
+  width: 100%; 
+  margin: auto;
+  background: #E8EAE3;
+} */
+.about span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #FF6864;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.9s;
+}
+.hire:hover{
+   background: #4070f4; 
+  border: 1px solid #E8EAE3;
+}
+/* ABOUT ME KO CSS END */
+
+/* OUR SERVICES CSS */
+.content{
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+  padding-top:0%;
+}
+.content h1{
+  font-size: 60px;
+  font-weight: 400;
+  font: 100;
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-top: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content h1::after{
+  content: "";
+  width: 270px;
+  height: 6px;
+  position: absolute;
+  background-color: #FF6864;
+  bottom: 0px;
+  transform: translate(-50%);
+  left: 50%;
+}
+.service{
+  padding: 5px 10px;
+  margin: 10px;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 20px;
+  gap: 3px;
+  padding: 3px 4px 4px;
+  cursor: pointer;
+  border-radius: 70px;
+
+}
+.service p{
+  padding-bottom: 40px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.service i{
+  font-size: 50px;
+   padding-top: 4px; 
+  color: #FF6864;
+}
+.service i:hover{
+  font-size: 70px;
+  /* padding-top: 3px; */
+  color: rgb(228, 228, 228);
+}
+.service:hover{
+  background-color:#FF6864;
+  color: black;
+  font-size: 35px;
+  transition: all 0.5s  ease-in-out;
+  
+}
+.include{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+/* OUR SERVICES CSS ENDS*/
+
     </style>
     </head>
     
@@ -131,9 +273,49 @@
     </div>
      
     <div id="body">
-        <div class="bodyopen">
-         <marquee behavior="scroll">Hello Everyone, This is Nischal's Online Notes and Old Questions Management System.</marquee> 
-        </div>
+
+                <div class="bodyopen">
+                <marquee behavior="scroll">Hello Everyone, This is Nischal's Online Notes and Old Questions Management System.</marquee> 
+                </div>
+        
+              <section class="about-us">
+                <div class="about">
+                <img src="/Images/1660898995790.jpg" class="pic">
+                <div class="text">
+                    <h2>About Me</h2>
+                    <h5><span>Nischal Baidar</span>-Technology Enthusiast</h5>
+                    <p>I am currently studying Computer Engineering, and I am working on many interesting projects related to computer. I am learning Arduino Uno, and my recent project on Arduino is a soil moisture finder, Smoke Detection and Automatic Door. I am now working and researching on a mind-controlled wireless robotic arm using a Brain-Computer Interface. I am also researching and learning about Cybersecurity, Intermediate Python, Machine Learning, SEO research and Artificial Intelligence.</p>
+                    <div class="data">
+                    <a href="#" class="hire">Hire Me</a>
+                    </div>
+                </div>
+                </div>
+            </section> 
+<br>
+            <div class="content">
+                <h1>Our Services</h1>
+                <div class="include">
+                    <div class="service">
+                      <img src="notes.png" width="10%">
+                        <h2>Online Notes</h2>
+                        <p>Get Notes to Read.</p>
+         
+                    </div>
+                    <div class="service">
+                     <img src="notes.png" width="10%">
+                        <h2>Old Questions</h2>
+                        <p>Check the Past Questions.</p>
+         
+                    </div>
+                  
+                    <div class="service">
+                     <img src="notes.png" width="10%">
+                        <h2>24/7 Call</h2>
+                        <p>If any questions Call Mr. Nischal</p>
+         
+                    </div>
+                </div>
+            </div>
       
     </div>
 
