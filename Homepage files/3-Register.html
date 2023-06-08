@@ -1,136 +1,69 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up</title>
-    <style>
-        table {
- border-spacing: 1;
- border-collapse: separate;
- border-radius: 2px;
- border: 1px solid #eb807d;
- width: 55%;
- height: 95%;
-}
-#rcorners1 {
-  border-radius: 50px;  /*Roundness dincha */
-  background: #E8EAE3;
-  padding: 30px;
-  width: 40%;
-  height: 50%;
-}
-Body {  
+  <title>Signup Page</title>
+  <style>
+    Body {  
   font-family: Calibri, Helvetica, sans-serif;  
   background-color: #1D2228;  
+  color: #E8EAE3;
 }  
-button {   
-    border-radius: 50px;
-       background-color: #eb807d;   
-       width: auto;  
-        color: rgb(0, 0, 0);   
-        padding: 10px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-      
-         }   
-button:hover {   
-        opacity: 0.7;   
-    }   
+    .container {
+    width: 400px;
+     margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #eb807d;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, button {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #eb807d;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #da6864;
+  }
     </style>
 </head>
-
 <body>
-  
-    <form>
-        
-        <center>
-        <table border="0" width="50%">
-            <tr bgcolor="#F7F4E9">
-            <th colspan="2" >Sign Up</th>
-            </tr>
+  <div class="container">
+    <h2>Signup Form</h2>
+    <form id="signupForm" onsubmit="validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
 
-            <tr>
-                <td bgcolor="#E8EAE3">First Name:</td>
-                <td bgcolor="#E8EAE3"><input type="form" value="aaa"><font color="RED">*</font></td>
-            </tr>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
 
-            <tr>
-                <td bgcolor="#E8EAE3"> Middle Name: </td>
-                <td bgcolor="#E8EAE3"><input type="form"></td>
-            </tr>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
 
-            <tr>
-                <td bgcolor="#E8EAE3"> Last Name: </td>
-                <td bgcolor="#E8EAE3"><input type="form"><font color="RED">*</font></td>
-            </tr>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
 
-            <tr>
-                <td bgcolor="#E8EAE3"> Gender: </td>
-                <td bgcolor="#E8EAE3"><input type="radio" >Male 
-                    <input type="radio">Female</td>
-            </tr>
-            
-            <tr>
-                <td bgcolor="#E8EAE3"> Phone No: </td>
-                <td bgcolor="#E8EAE3"><input type="form"></td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#E8EAE3"> Mobile No: </td>
-                <td bgcolor="#E8EAE3"><input type="form"></td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#E8EAE3"> Email:</td>
-                <td bgcolor="#E8EAE3"><input type="form"></td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#E8EAE3"> Faculty: </td>
-                <td bgcolor="#E8EAE3"> 
-                    <select>
-                        <option value="Computer" selected>--Computer</option>
-                        <option value="Civil">Civil</option>
-                        <option value="Architecture">Architecture</option>
-                        <option value="Elex & Communication">Elex & Communication</option>
-                        <option>Other</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#E8EAE3"> University: </td>
-                <td bgcolor="#E8EAE3"> 
-                    <select>
-                        <option selected>Tribhuvan University</option>
-                        <option>Purbanchal University</option>
-                        <option>Pokhara University</option>
-                        <option>Other</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#E8EAE3">About:</td>
-                <td bgcolor="#E8EAE3">
-                    <textarea cols="30" rows="10">I am ...</textarea>
-                </td>
-            </tr>
-            
-            <tr>
-                <td bgcolor="#F7F4E9" colspan="2"><font color="RED">* astric indicates the required field</font></td>
-            </tr>
-
-            <tr>
-                <td bgcolor="#F7F4E9" colspan="2">
-                <center><button type="button">Sign Up</button></center> 
-                </td>
-            </tr>     
-        </table>
-   
-    
-      </form>
-
-    </center>
-    
+  <script src="/JavaScript Files/signup Validation.js"></script>
 </body>
 </html>
